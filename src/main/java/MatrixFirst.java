@@ -24,7 +24,7 @@ public class MatrixFirst {
         return rows;
     }
 
-    public int[] getArr() {
+    int[] getArr() {
         return arr;
     }
 
@@ -37,7 +37,7 @@ public class MatrixFirst {
         this.arr = a;
     }
 
-    public static int[] choice(int n) {
+    static int[] choice(int n) {
         System.out.println("Как заполнять : 1 - случайными числами, 2 - с клавиатуры");
         int choice = input.nextInt();
         switch (choice) {

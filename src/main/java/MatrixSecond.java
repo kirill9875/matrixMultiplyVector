@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class MatrixSecond {
+class MatrixSecond {
 
     private static Scanner input = new Scanner(System.in);
     private static Random rand = new Random();
@@ -9,7 +9,7 @@ public class MatrixSecond {
     private int cols;
 
 
-    public MatrixSecond(int n) {
+    MatrixSecond(int n) {
         if (n <= 0) {
             System.out.println("Не правильный ввод");
             return;
@@ -18,7 +18,7 @@ public class MatrixSecond {
         this.cols = n;
     }
 
-    public MatrixSecond(int n,int m) {
+    MatrixSecond(int n, int m) {
         if (n <= 0 && m <= 0) {
             System.out.println("не правильный ввод");
             return;
@@ -27,17 +27,17 @@ public class MatrixSecond {
         this.rows = n;
     }
 
-    public int getRows() {
+    int getRows() {
         return rows;
     }
 
 
-    public int getCols() {
+    int getCols() {
         return cols;
     }
 
 
-    public static int[][] choiceSec(int n, int m) {
+    static int[][] choiceSec(int n, int m) {
         System.out.println("Как заполнять : 1 - случайными числами, 2 - с клавиатуры");
         int choice = input.nextInt();
         switch (choice) {
@@ -112,8 +112,6 @@ public class MatrixSecond {
                 }
             }
         }
-
-
 
     }
 

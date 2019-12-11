@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 public class Main {
     private static int[][] massSec;
@@ -88,8 +87,8 @@ public class Main {
         }
         System.out.println(
                 "выводим результатирующий вектор который получился в результате перемножения вектора на матрицу");
-        for (int i = 0; i < resultVector.length; i++) {
-            System.out.print(resultVector[i] + " ");
+        for (int i1 : resultVector) {
+            System.out.print(i1 + " ");
         }
 
         return resultVector;
